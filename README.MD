@@ -11,7 +11,7 @@ Our experiments use docker containers to run and Weight and Biases (https://www.
 docker build -t invalid_action_masking:latest -f sharedmemory.Dockerfile .
 # build docker run commands. replace `{YOUR_WANDB_KEY}` with your own
 WANDB_KEY={YOUR_WANDB_KEY} python docker.py > docker.sh
-# run experiments
+# run experiments (96 in total)
 # if you have limited computational resources, consider not running all of them at a time.
 # in addition, notice the commands have --cpuset-cpus="0", --cpuset-cpus="1" for different runs
 # to make sure each container is only using one core. By default I assume your machine has 40 cores,
